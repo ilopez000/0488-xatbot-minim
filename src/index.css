@@ -1,0 +1,118 @@
+:root {
+  --vermell: #e1211d;
+  --fosc: #1f2a30;
+  --gris: #4c6971;
+  --vora: #c9d3d6;
+  --suau: #f3f5f6;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fosc);
+  background: var(--suau);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+}
+
+.pista {
+  margin: 0 0 16px;
+  color: var(--gris);
+}
+
+/* Dues columnes una al costat de l'altra (una sota l'altra al mòbil) */
+.columnes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.columna {
+  background: white;
+  border: 1px solid var(--vora);
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 240px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.explicacio {
+  margin: 4px 0 12px;
+  font-size: 0.85rem;
+  color: var(--gris);
+}
+
+.bombolla {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  max-width: 85%;
+  width: fit-content;
+}
+
+.meva {
+  margin-left: auto;
+  background: var(--fosc);
+  color: white;
+}
+
+.ia {
+  background: var(--suau);
+}
+
+.estat {
+  color: var(--gris);
+}
+
+.error {
+  color: var(--vermell);
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+input {
+  flex: 1 1 220px;
+  padding: 10px 12px;
+  font: inherit;
+  border: 1px solid var(--vora);
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 16px;
+  font: inherit;
+  border: 0;
+  border-radius: 8px;
+  background: var(--vermell);
+  color: white;
+  cursor: pointer;
+}
+
+button[type='button'] {
+  background: var(--gris);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
